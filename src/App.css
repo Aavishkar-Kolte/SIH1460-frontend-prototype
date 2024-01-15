@@ -1,38 +1,288 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+
+
+#header {
+  background-color: #0D4F8B;
+  display: flex;
+  width: auto;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 0px;
+}
+
+#date-time-div {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 1px, rgba(0, 0, 0, 0.2) 0px 4px 2px, rgba(0, 0, 0, 0.1) 0px 6px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  background-color: #EEA412;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#date-time-div p {
+  margin: 0;
+  color: #0D4F8B;
+  display: inline;
+  font-weight: 600;
+  margin: 0px 20px;
+}
+
+#header-logo-div {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#aicte-logo {
+  height: 80px;
+}
+
+#sla-logo {
+  height: 80px;
+}
+
+#parakh-logo {
+  height: 80px;
+}
+
+#take-test-div {
+  height: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#test-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  margin: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border: black 1px solid;
+  border-radius: 10px;
+}
+
+#status {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#test-nav-div {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#standard-select {
+  padding: 5px;
+}
+
+#timer {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 5px;
+  border: black 1px solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px
+}
+
+#test {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer {
+  background-color: #0D4F8B;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+#result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.margin {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100%;
+}
+
+.page-margin {
+  margin-top: 150px;
+}
+
+.btn {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #EEA412;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 30px;
+  border-style: solid;
   color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.question-div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question-text {
+  font-size: 24px;
+  border: #0D4F8B 1px solid;
+  padding: 10px 20px;
+  margin-top: 5px ;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.options {
+  margin: 10px 20px 0px 20px;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  margin: 10px 10px 10px 10px;
+  width: auto;
+  background-color: white;
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 750px;
+  border-radius: 5px;
+}
+
+.radio {
+  width: 17px;
+  height: 17px;
+}
+
+
+
+
+
+label {
+  margin: 10px;
+}
+
+
+
+
+/* CSS */
+.button-39 {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209, 213, 219);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  font-size: large;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px
+}
+
+.button-39:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.button-39:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-39:focus-visible {
+  box-shadow: none;
+}
+
+
+select {
+  font-size: 18px;
+  width: 400px;
+  margin: 20px;
 }
